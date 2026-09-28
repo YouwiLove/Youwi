@@ -1,1 +1,5 @@
-touch .gitignore
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+result.xml
