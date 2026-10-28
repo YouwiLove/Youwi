@@ -53,3 +53,4 @@ success {
 echo 'Сборка прошла успешно, Quality Gate пройден'
 }
 }
+}
