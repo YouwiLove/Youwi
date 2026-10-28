@@ -50,6 +50,5 @@ always {
 junit 'result.xml'
 }
 success {
-echo 'Сборка прошла успешно, Quality Gate пройд
-ен'
+echo 'Сборка прошла успешно, Quality Gate пройден'
 }
