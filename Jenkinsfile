@@ -27,6 +27,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh './venv/bin/pytest --junitxml=result.xml --cov=app --cov-report=xml:coverage.xml'
+                junit 'result.xml'
             }
         }
         stage('SonarQube Analysis') {
@@ -45,9 +46,6 @@ pipeline {
         }
     }
     post {
-        always {
-            junit 'result.xml'
-        }
         success {
             echo 'Сборка прошла успешно, Quality Gate пройден'
         }
