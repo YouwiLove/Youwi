@@ -47,7 +47,9 @@ waitForQualityGate abortPipeline: true
 }
 post {
 always {
+  node {
 junit 'result.xml'
+  }
 }
 success {
 echo 'Сборка прошла успешно, Quality Gate пройден'
