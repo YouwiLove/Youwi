@@ -47,7 +47,7 @@ waitForQualityGate abortPipeline: true
 }
 post {
 always {
-  node {
+  node('any') {
 junit 'result.xml'
   }
 }
