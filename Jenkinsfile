@@ -52,3 +52,4 @@ junit 'result.xml'
 success {
 echo 'Сборка прошла успешно, Quality Gate пройден'
 }
+}
